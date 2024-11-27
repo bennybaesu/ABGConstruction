@@ -12,36 +12,39 @@ import "@fontsource/source-sans-pro";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#1976d2",
-      light: "#63a4ff",
-      dark: "#004ba0",
-      contrastText: "#ffffff",
+      main: "#dd9735", // Main orange color
+      light: "#ffbd66", // Lighter version for hover effects or highlights
+      dark: "#a9681c", // Darker version for deeper accents
+      contrastText: "#ffffff", // Contrast text to ensure readability
     },
     secondary: {
-      main: "#dc004e",
-      light: "#ff5983",
-      dark: "#9a0036",
-      contrastText: "#ffffff",
+      main: "#4e6946", // Main green color
+      light: "#799770", // Lighter version for subtle accents
+      dark: "#32432e", // Darker version for deeper tones
+      contrastText: "#ffffff", // Contrast text to ensure readability
     },
     error: {
-      main: "#f44336",
+      main: "#f44336", // Standard error red
     },
     warning: {
-      main: "#ffa726",
+      main: "#ffa726", // Orange warning color
     },
     info: {
-      main: "#29b6f6",
+      main: "#0f80a0", // Main blue color
+      light: "#4faed1", // Lighter version for information highlights
+      dark: "#0b5c73", // Darker version for deep information accents
+      contrastText: "#ffffff", // Contrast text to ensure readability
     },
     success: {
-      main: "#66bb6a",
+      main: "#66bb6a", // Green for success
     },
     background: {
-      default: "#f5f5f5",
-      paper: "#ffffff",
+      default: "#f5f5f5", // Light grey background for the page
+      paper: "#ffffff", // White background for card-like elements
     },
     text: {
-      primary: "#212121",
-      secondary: "#757575",
+      primary: "#212121", // Main dark text color for high contrast
+      secondary: "#757575", // Lighter text for secondary information
     },
   },
   typography: {
@@ -89,6 +92,7 @@ const theme = createTheme({
     button: {
       textTransform: "uppercase",
       fontFamily: "'Poppins', sans-serif", // Custom font for buttons
+      fontWeight: 400,
     },
     caption: {
       fontSize: "0.75rem",

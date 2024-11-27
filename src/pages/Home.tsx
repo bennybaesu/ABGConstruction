@@ -1,18 +1,27 @@
-import React from 'react';
-import Slideshow from '../components/Slideshow';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import React from "react";
+import Slideshow from "../components/Slideshow";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import ProductHighlights from "../components/ProductHighlights";
 
 const Home: React.FC = () => {
   return (
     <Box>
       <Slideshow />
-      <Box sx={{ p: 4 }}>
-        <Typography variant="h2">Welcome to ABG Construction</Typography>
-        <Typography variant="body1">
-          We provide high-quality construction and restoration services.
-        </Typography>
+      <Box
+        sx={{
+          p: 4,
+          width: "100%",
+          alignItems: "center",
+          justifyContent: "center",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+
+        <ProductHighlights />
       </Box>
+      
     </Box>
   );
 };
